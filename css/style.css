@@ -198,23 +198,59 @@ footer h6{text-shadow:4px 4px 0 rgba(255, 255, 255, 0.1);}
     margin-right: 10px;
 }
 .language > a > svg{
-	width: 30px;
+	 width: 30px;
+    height: 16px;
+    margin-top: 6px;
 }
 .dop-header{
 	display: flex;
 	justify-content: space-between;
-	padding-top: 5px;
+	padding-top: 10px;
 	padding-bottom: 5px;
 	align-items: center;
+  font-family: Play, sans-serif;
+  color: #e1d3be;
 }
-.dop-header > a{
-	color: #e1d3be;
-	font-family: Play, sans-serif;
+.dop-header > .time > svg{
+  width: 20px;
 }
-.dop-header > p{
-	margin: 0;
-	font-family: Play, sans-serif;
-	color: #e1d3be;
+.dop-header > .time > span{
+  white-space: nowrap;
+}
+.dop-header > div{
+  display: flex;
+  align-items: center;
+}
+.dop-header > div > svg{
+  margin-right: 5px;
+  fill: #e1d3be;
+  width: 20px;
+  height: 20px;
+}
+.dop-header > .tell > .tell-dop > svg{
+  margin-right: 5px;
+  fill: #e1d3be;
+  width: 20px;
+  height: 20px;
+}
+.dop-header > .tell > .tell-dop{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.dop-header > .tell > .tell-dop > a{
+  color: #e1d3be; 
+}
+.dop-header > .tell > .social-icon > a > img{
+  width: 20px;
+  height: 20px;
+}
+.dop-header > .tell{
+  flex-direction: column;
+}
+.flex{
+  display: flex;
+  justify-content: flex-end;
 }
 @media all and (max-width:768px){
 	.dop-header > a{
@@ -223,28 +259,30 @@ footer h6{text-shadow:4px 4px 0 rgba(255, 255, 255, 0.1);}
 	.dop-header > p{
 		font-size: 13px;
 	}
+  .flex{
+    display: block;
+  }
 }
 @media all and (max-width:767px){
+  .dop-header > div{
+    margin-bottom: 5px;
+  }
 	.dop-header{
 		flex-direction: column;
-	}
-	.dop-header > a{
-		font-size: 14px;
-		text-align: center;
-		margin-bottom: 5px;
-	}
-	.dop-header > p{
-		text-align: center;
-		font-size: 14px;
-		margin-bottom: 5px;
 	}
 	#comboNav{
 		margin-top: 10px;
 	}
 	.language{
-		margin-top: 85px;
+    margin-top: 0px;
 		margin-right: 0px;
 	}
+}
+@media all and (max-width:450px){
+  .language {
+    margin-top: 79px;
+    margin-right: -4px;
+  }
 }
 
 .cd-breadcrumb, .cd-multi-steps {
@@ -338,7 +376,7 @@ footer h6{text-shadow:4px 4px 0 rgba(255, 255, 255, 0.1);}
     margin: 0 1em;
   }
   .cd-breadcrumb li > *, .cd-multi-steps li > * {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
 }
 

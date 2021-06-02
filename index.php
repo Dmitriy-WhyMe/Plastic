@@ -161,7 +161,7 @@
 					           <li><img src="images/07_thumb.jpg" alt="пруток для сварки пластика" /></li>
 					        </ul>
 					  </div>
-					  <div class="button-next">Вперёд</div>
+					  <div class="button-next" id="btn-click">Вперёд</div>
 					  <div  class="button-previous">Назад</div>
 					  <!-- REMOVED TILL FIXED <div class="button-control"><span>STOP</span></div> -->
 					</div> 
@@ -379,6 +379,9 @@
 		
 		<!-- Yandex.Metrika counter -->
 <script>
+	setInterval(function(){ 
+	   $("#btn-click").click();
+	},5000);
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
